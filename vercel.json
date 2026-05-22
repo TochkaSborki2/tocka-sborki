@@ -1,0 +1,14 @@
+{
+  "name": "Точка Сборки",
+  "version": 2,
+  "public": true,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "VERCEL_ANALYTICS_ID": ""
+  }
+}
