@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Точка Сборки: Метод Евгения Королёва — Life OS за 8 недель</title>
+<title>Точка Сборки — Life OS за 8 недель</title>
 <style>
 :root {
   --bg: #080808;
@@ -28,17 +28,14 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden; }
 
-/* ── TYPOGRAPHY ── */
 h1,h2,h3,h4 { font-weight: 800; line-height: 1.2; }
 p { color: var(--muted); font-size: 16px; }
 
-/* ── UTILS ── */
 .container { max-width: 1020px; margin: 0 auto; padding: 0 24px; }
 .section { padding: 96px 0; }
 .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent); margin-bottom: 16px; }
 .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border2), transparent); margin: 0; }
 
-/* ── NAVBAR ── */
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 0; background: rgba(8,8,8,0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { font-size: 17px; font-weight: 900; color: #fff; letter-spacing: -0.5px; }
@@ -46,7 +43,6 @@ p { color: var(--muted); font-size: 16px; }
 .nav-cta { background: var(--accent); color: #000; font-size: 14px; font-weight: 800; padding: 10px 24px; border-radius: 8px; text-decoration: none; white-space: nowrap; transition: background .2s; }
 .nav-cta:hover { background: var(--accent2); }
 
-/* ── HERO ── */
 .hero { padding: 160px 0 100px; position: relative; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,111,0,0.07) 0%, transparent 70%); pointer-events: none; }
 .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-soft); border: 1px solid rgba(255,111,0,0.25); color: var(--accent2); font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 20px; margin-bottom: 28px; letter-spacing: 0.3px; }
@@ -66,7 +62,6 @@ p { color: var(--muted); font-size: 16px; }
 .proof-item .num span { color: var(--accent); }
 .proof-item .label { font-size: 13px; color: var(--dim); margin-top: 2px; }
 
-/* ── PAIN ── */
 .pain-section { background: var(--bg2); }
 .pain-intro { text-align: center; max-width: 680px; margin: 0 auto 56px; }
 .pain-intro h2 { font-size: clamp(28px, 3.5vw, 42px); color: #fff; margin-bottom: 16px; }
@@ -80,7 +75,6 @@ p { color: var(--muted); font-size: 16px; }
 .pain-quote blockquote { font-size: clamp(18px, 2.5vw, 26px); color: #e0e0e0; font-style: italic; font-weight: 600; line-height: 1.5; max-width: 700px; margin: 0 auto 16px; }
 .pain-quote cite { font-size: 14px; color: var(--dim); }
 
-/* ── FOR WHOM ── */
 .for-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 48px; }
 .for-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 28px; transition: border-color .2s, transform .2s; }
 .for-card:hover { border-color: rgba(255,111,0,0.3); transform: translateY(-3px); }
@@ -89,7 +83,6 @@ p { color: var(--muted); font-size: 16px; }
 .for-card .income { font-size: 12px; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
 .for-card p { font-size: 14px; margin: 0; }
 
-/* ── ANTI-INFOBIZ ── */
 .anti-section { background: var(--bg2); }
 .anti-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 48px; border-radius: 20px; overflow: hidden; }
 .anti-col { padding: 40px; }
@@ -105,7 +98,6 @@ p { color: var(--muted); font-size: 16px; }
 .anti-bad .anti-row p { color: #999; }
 .anti-good .anti-row p { color: #aaa; }
 
-/* ── PROGRAM ── */
 .program-intro { max-width: 640px; margin-bottom: 64px; }
 .program-intro h2 { font-size: clamp(28px, 3.5vw, 42px); color: #fff; margin-bottom: 16px; }
 .program-timeline { position: relative; }
@@ -124,7 +116,6 @@ p { color: var(--muted); font-size: 16px; }
 .prog-detail::before { content: '→'; color: var(--accent); flex-shrink: 0; }
 .prog-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,111,0,0.1); border: 1px solid rgba(255,111,0,0.2); color: var(--accent); font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-top: 10px; }
 
-/* Colors per block */
 .c1 .prog-circle { background: #0f0800; border-color: var(--accent); color: var(--accent); }
 .c1 .prog-connector { background: linear-gradient(var(--accent), rgba(255,111,0,0.4)); }
 .c1 .prog-tag { background: rgba(255,111,0,0.1); color: var(--accent); }
@@ -150,7 +141,6 @@ p { color: var(--muted); font-size: 16px; }
 .c8 .prog-connector { background: none; }
 .c8 .prog-tag { background: rgba(128,203,196,0.1); color: #80cbc4; }
 
-/* ── INCLUDES ── */
 .includes-section { background: var(--bg2); }
 .includes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 48px; }
 .inc-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
@@ -158,24 +148,11 @@ p { color: var(--muted); font-size: 16px; }
 .inc-card h4 { color: #fff; font-size: 16px; margin-bottom: 8px; }
 .inc-card p { font-size: 14px; margin: 0; }
 
-/* ── DIAGNOSTIC CTA ── */
 .diag-box { background: linear-gradient(135deg, #0d0800, #140c00); border: 2px solid var(--accent); border-radius: 20px; padding: 40px; margin-top: 32px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; }
 .diag-left h3 { color: #fff; font-size: 22px; margin-bottom: 8px; }
 .diag-left p { font-size: 15px; margin: 0; }
 .diag-right { flex-shrink: 0; text-align: center; }
 
-/* ── GUARANTEE ── */
-.guarantee-section { }
-.guarantee-box { background: linear-gradient(135deg, #080f08, #0a140a); border: 2px solid #2e7d32; border-radius: 24px; padding: 56px; display: flex; gap: 40px; align-items: flex-start; }
-.guarantee-icon { font-size: 80px; flex-shrink: 0; line-height: 1; }
-.guarantee-content h2 { font-size: clamp(24px, 3vw, 36px); color: #fff; margin-bottom: 16px; }
-.guarantee-content p { font-size: 16px; margin-bottom: 12px; }
-.guarantee-points { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
-.gp { display: flex; gap: 12px; align-items: flex-start; }
-.gp-icon { color: var(--green); font-size: 16px; flex-shrink: 0; margin-top: 3px; }
-.gp-text { font-size: 15px; color: #bbb; }
-
-/* ── SCARCITY ── */
 .scarcity-bar { background: linear-gradient(135deg, #140808, #1a0a0a); border: 1px solid #b71c1c; border-radius: 16px; padding: 32px 40px; margin-top: 32px; display: flex; gap: 24px; align-items: center; }
 .sc-icon { font-size: 40px; flex-shrink: 0; }
 .sc-text h4 { color: var(--red); font-size: 20px; margin-bottom: 6px; }
@@ -184,7 +161,6 @@ p { color: var(--muted); font-size: 16px; }
 .sc-spots .num { font-size: 56px; font-weight: 900; color: #fff; line-height: 1; }
 .sc-spots .label { font-size: 12px; color: var(--dim); text-transform: uppercase; letter-spacing: 1px; }
 
-/* ── OFFER CTA ── */
 .offer-section { background: var(--bg2); }
 .offer-box { background: linear-gradient(135deg, #0d0800, #1a1000); border: 2px solid var(--accent); border-radius: 28px; padding: 56px; text-align: center; }
 .offer-box h2 { font-size: clamp(28px, 4vw, 48px); color: #fff; margin-bottom: 8px; }
@@ -197,19 +173,11 @@ p { color: var(--muted); font-size: 16px; }
 .offer-cta:hover { transform: translateY(-3px); box-shadow: 0 20px 60px rgba(255,111,0,0.4); }
 .offer-subtext { font-size: 14px; color: var(--dim); margin-top: 16px; }
 
-/* ── FAQ ── */
-.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px; }
-.faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
-.faq-item h4 { color: #ddd; font-size: 15px; margin-bottom: 10px; }
-.faq-item p { font-size: 14px; margin: 0; }
-
-/* ── FOOTER ── */
 footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 48px 0; text-align: center; }
 footer p { font-size: 14px; color: var(--dim); }
 footer .brand { font-size: 20px; font-weight: 900; color: #fff; margin-bottom: 8px; }
 footer .brand span { color: var(--accent); }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .nav-logo { font-size: 15px; }
   .hero { padding: 120px 0 72px; }
@@ -218,14 +186,11 @@ footer .brand span { color: var(--accent); }
   .program-timeline::before { left: 22px; }
   .prog-node { width: 46px; }
   .prog-circle { width: 46px; height: 46px; font-size: 16px; }
-  .guarantee-box { flex-direction: column; gap: 24px; padding: 36px 28px; }
-  .guarantee-icon { font-size: 56px; }
   .scarcity-bar { flex-direction: column; text-align: center; }
   .sc-spots { margin-left: 0; }
   .diag-box { grid-template-columns: 1fr; }
   .diag-right { text-align: left; }
   .offer-box { padding: 36px 24px; }
-  .faq-grid { grid-template-columns: 1fr; }
   .for-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 480px) {
@@ -245,16 +210,15 @@ footer .brand span { color: var(--accent); }
   </div>
 </nav>
 
-<!-- ── HERO ── -->
+<!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="container">
-    <div class="hero-eyebrow">Life OS · Метод Евгения Королёва · Поток открыт</div>
-    <h1>Ты знаешь, что делать.<br>Но <em>не делаешь.</em><br>Это решаемо за 8 недель.</h1>
+    <div class="hero-eyebrow">Life OS · Поток открыт</div>
+    <h1>Создай <em>сбалансированную</em> и эффективную жизнь за 8 недель</h1>
     <p class="hero-sub">
-      <strong>Точка Сборки</strong> — не курс по привычкам и не очередное наставничество.
-      Это инженерная система внедрения изменений: с ежедневным трекингом, AI-консьержем
-      и пулом специалистов. Для предпринимателей, которым нужен результат, а не вдохновение.
+      <strong>Точка Сборки</strong> — это не курс по привычкам и не очередное наставничество.
+      Это инженерная система внедрения изменений.
     </p>
     <div class="hero-actions">
       <a href="https://t.me/korolev_finance" target="_blank" class="btn-primary">Записаться на диагностику →</a>
@@ -270,12 +234,8 @@ footer .brand span { color: var(--accent); }
         <div class="label">до системного<br>результата</div>
       </div>
       <div class="proof-item">
-        <div class="num">10<span>мест</span></div>
+        <div class="num">15<span>мест</span></div>
         <div class="label">камерный формат<br>в потоке</div>
-      </div>
-      <div class="proof-item">
-        <div class="num">60<span>дн</span></div>
-        <div class="label">гарантия результата<br>или возврат</div>
       </div>
     </div>
   </div>
@@ -283,68 +243,68 @@ footer .brand span { color: var(--accent); }
 
 <div class="divider"></div>
 
-<!-- ── PAIN ── -->
+<!-- PAIN -->
 <section class="pain-section section">
   <div class="container">
     <div class="pain-intro">
       <div class="section-label">Узнаёшь себя?</div>
       <h2>Бизнес работает.<br>Жизнь — нет.</h2>
-      <p>Ты построил то, о чём мечтал. Доход есть. Свободы — нет. Что-то сломалось по пути.</p>
+      <p>Ты построил то, о чём мечтал. Доход есть, свободы нет.</p>
     </div>
     <div class="pain-grid">
       <div class="pain-card">
         <div class="pain-emoji">😮‍💨</div>
         <div class="pain-text">
-          <strong>Знаешь — но не делаешь</strong>
-          <p>Прочитал Atomic Habits. Завёл трекер. Через 18 дней всё рассыпалось. Снова.</p>
+          <strong>Знаешь, но не делаешь</strong>
+          <p>Прочитал Атомные привычки, кучу книг, но так ничего и не внедрил</p>
         </div>
       </div>
       <div class="pain-card">
         <div class="pain-emoji">⚡</div>
         <div class="pain-text">
           <strong>Энергия нестабильна</strong>
-          <p>Есть дни «в ресурсе» — и дни, когда просто функционируешь. Вторых становится больше.</p>
+          <p>То полон сил и мотивации, то устал и ничего не хочешь без чёткой причины</p>
         </div>
       </div>
       <div class="pain-card">
         <div class="pain-emoji">📱</div>
         <div class="pain-text">
           <strong>Операционка поглощает всё</strong>
-          <p>Ты стал приложением к своему бизнесу. Стратегия — когда-нибудь потом.</p>
+          <p>Ты стал приложением к своему бизнесу и отложил жизнь на потом</p>
         </div>
       </div>
       <div class="pain-card">
         <div class="pain-emoji">👨‍👧</div>
         <div class="pain-text">
-          <strong>Физически рядом — психологически нет</strong>
-          <p>Сидишь рядом с детьми и думаешь о задачах. Они уже не зовут.</p>
+          <strong>Физически рядом, но мыслями далеко</strong>
+          <p>Даже при общении с семьёй не можешь расслабиться</p>
         </div>
       </div>
       <div class="pain-card">
         <div class="pain-emoji">🔄</div>
         <div class="pain-text">
-          <strong>Купил курсы — не прошёл</strong>
-          <p>Большинство куплено и закрыто на 3-м модуле. Знаний много. Внедрения — ноль.</p>
+          <strong>Купленные курсы пылятся на диске</strong>
+          <p>Посмотрел, стал умнее, но жизнь не поменялась</p>
         </div>
       </div>
       <div class="pain-card">
         <div class="pain-emoji">❓</div>
         <div class="pain-text">
           <strong>Всё есть — а зачем?</strong>
-          <p>Достиг, что планировал. Почувствовал пустоту. Это не кризис — это сломанная система.</p>
+          <p>Достиг целей и почувствовал пустоту</p>
         </div>
       </div>
     </div>
     <div class="pain-quote">
-      <blockquote>«Я знаю, что делать. Мне нужна система, чтобы это делать»</blockquote>
-      <cite>— Именно это говорит каждый второй участник на первом созвоне</cite>
+      <blockquote>«Я много всего знаю, но не могу внедрить»</blockquote>
+      <cite>— Знакомо?</cite>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ── FOR WHOM ── -->
+<!-- FOR WHOM -->
 <section class="section">
   <div class="container">
     <div class="section-label">Для кого</div>
@@ -352,33 +312,33 @@ footer .brand span { color: var(--accent); }
     <div class="for-grid">
       <div class="for-card">
         <div class="icon">⚡</div>
-        <div class="income">Доход есть — свободы нет</div>
-        <h4>Перегретый Оператор</h4>
-        <p>Бизнес «ест» жизнь. Постоянная текучка. Хочешь выйти из операционки, но не знаешь как — и страшно.</p>
+        <div class="income">Доход есть, свободы нет</div>
+        <h4>Рабочая Лошадка</h4>
+        <p>Бизнес «ест» жизнь. Постоянная текучка. Хочешь выйти из операционки, но не знаешь как.</p>
       </div>
       <div class="for-card">
         <div class="icon">🌀</div>
-        <div class="income">Много идей — мало внедрения</div>
-        <h4>Умный Хаотик</h4>
-        <p>Сотни идей, ноль доведённых до конца. Высокий интеллект, низкий КПД. Нужна система, а не мотивация.</p>
+        <div class="income">Много идей, мало внедрения</div>
+        <h4>Творческая Натура</h4>
+        <p>Сотни идей, но мало доведённых до конца. Высокий интеллект, низкая эффективность. Нужна система, а не мотивация.</p>
       </div>
       <div class="for-card">
         <div class="icon">🔋</div>
-        <div class="income">Плато и выгорание</div>
-        <h4>Уставший Достигатор</h4>
-        <p>Делаешь всё правильно — результата нет. Выгорание. Доход на плато. Делегирование «не лезет».</p>
+        <div class="income">Выгорание и плато</div>
+        <h4>Выгоревший Достигатор</h4>
+        <p>Делаешь всё правильно, но результата нет. Выгорание и нежелание достигать цели.</p>
       </div>
       <div class="for-card">
         <div class="icon">🌑</div>
-        <div class="income">Деньги есть — радости нет</div>
+        <div class="income">Деньги есть, радости нет</div>
         <h4>Потерявший Вектор</h4>
         <p>«Всё есть — а зачем?» Нужен новый смысл, а не ещё один бизнес-инструмент.</p>
       </div>
       <div class="for-card">
         <div class="icon">✈️</div>
-        <div class="income">Бали · Дубай · Кипр</div>
-        <h4>Разорванный Релокант</h4>
-        <p>Переехал — и потерял опору. Привычные ритмы разрушены, новых нет. Одиночество в новом месте.</p>
+        <div class="income">Бали · Дубай · Пхукет</div>
+        <h4>Потерянный Релокант</h4>
+        <p>Переехал и потерял привычную среду, окружение, образ жизни.</p>
       </div>
     </div>
   </div>
@@ -386,12 +346,12 @@ footer .brand span { color: var(--accent); }
 
 <div class="divider"></div>
 
-<!-- ── ANTI-INFOBIZ ── -->
+<!-- ANTI-INFOBIZ -->
 <section class="anti-section section">
   <div class="container">
     <div class="section-label">Позиционирование</div>
-    <h2 style="font-size:clamp(26px,3vw,38px);color:#fff;margin-bottom:8px;">Точка Сборки — это не курс.<br>Это <span style="color:var(--accent)">экзоскелет</span>.</h2>
-    <p style="max-width:540px;">Мы не продаём информацию. Мы внедряем её в твой календарь, тело и привычки.</p>
+    <h2 style="font-size:clamp(26px,3vw,38px);color:#fff;margin-bottom:8px;">Точка Сборки — это не курс.<br>Это <span style="color:var(--accent)">программа внедрения</span>.</h2>
+    <p style="max-width:540px;">Мы не продаём информацию. Мы помогаем тебе внедрить её в жизнь.</p>
     <div class="anti-grid">
       <div class="anti-col anti-bad">
         <h3 class="bad-title">❌ Классический инфобизнес</h3>
@@ -399,17 +359,17 @@ footer .brand span { color: var(--accent); }
         <div class="anti-row"><div class="anti-icon">–</div><p>«Успешный успех» и квантовые скачки</p></div>
         <div class="anti-row"><div class="anti-icon">–</div><p>Ты получаешь контент и делаешь сам</p></div>
         <div class="anti-row"><div class="anti-icon">–</div><p>Через месяц всё рассыпается</p></div>
-        <div class="anti-row"><div class="anti-icon">–</div><p>Никакой ответственности за результат</p></div>
-        <div class="anti-row"><div class="anti-icon">–</div><p>Один «универсальный» куратор</p></div>
+        <div class="anti-row"><div class="anti-icon">–</div><p>Обещание волшебной таблетки</p></div>
+        <div class="anti-row"><div class="anti-icon">–</div><p>Кураторы не в теме</p></div>
       </div>
       <div class="anti-col anti-good">
         <h3 class="good-title">✅ Точка Сборки: Life OS</h3>
         <div class="anti-row"><div class="anti-icon">+</div><p>Протоколы внедрения на 8 недель</p></div>
-        <div class="anti-row"><div class="anti-icon">+</div><p>Инженерный язык: трекинг, диагностика, ROI энергии</p></div>
-        <div class="anti-row"><div class="anti-icon">+</div><p>AI-экзоскелет держит тебя 24/7</p></div>
-        <div class="anti-row"><div class="anti-icon">+</div><p>Система приживается — есть внешняя accountability</p></div>
-        <div class="anti-row"><div class="anti-icon">+</div><p>Гарантия результата 60 дней</p></div>
-        <div class="anti-row"><div class="anti-icon">+</div><p>Пул специалистов под каждый «сбой»</p></div>
+        <div class="anti-row"><div class="anti-icon">+</div><p>Регулярная диагностика и трекинг показателей</p></div>
+        <div class="anti-row"><div class="anti-icon">+</div><p>Фокус на внедрение</p></div>
+        <div class="anti-row"><div class="anti-icon">+</div><p>Внешняя отчётность</p></div>
+        <div class="anti-row"><div class="anti-icon">+</div><p>Реалистичные результаты если делать</p></div>
+        <div class="anti-row"><div class="anti-icon">+</div><p>Персональный контроль специалистов</p></div>
       </div>
     </div>
   </div>
@@ -417,13 +377,13 @@ footer .brand span { color: var(--accent); }
 
 <div class="divider"></div>
 
-<!-- ── PROGRAM ── -->
+<!-- PROGRAM -->
 <section class="section" id="program">
   <div class="container">
     <div class="program-intro">
       <div class="section-label">Программа</div>
       <h2>8 блоков, которые меняют операционную систему жизни</h2>
-      <p>Каждый блок — не лекция, а протокол внедрения. Мы идём последовательно: сначала расчищаем, потом строим, потом закрепляем.</p>
+      <p>Каждый блок — это не лекция, а пошаговая инструкция. Мы идём последовательно: сначала расчищаем завалы, потом строим, потом закрепляем.</p>
     </div>
     <div class="program-timeline">
 
@@ -435,14 +395,12 @@ footer .brand span { color: var(--accent); }
         <div class="prog-body">
           <div class="prog-tag">Блок 1 · Фундамент</div>
           <h3>Приоритеты и цели — куда ты на самом деле хочешь</h3>
-          <p>Прежде чем что-то внедрять — нужно понять вектор. Большинство живут по целям, которые им навязали. Здесь ты находишь свои.</p>
+          <p>Прежде чем что-то внедрять, нужно понять, что для тебя является главным. Большинство живут по целям, которые им навязали. Здесь ты найдёшь свои.</p>
           <div class="prog-details">
-            <div class="prog-detail">Диагностика текущего состояния по 6 сферам жизни: энергия, фокус, деньги, тело, отношения, смыслы</div>
-            <div class="prog-detail">Получение Reassembly Score — персонального индекса, где конкретно сломана система</div>
-            <div class="prog-detail">Постановка намерения на программу — без этого остальные блоки не работают</div>
-            <div class="prog-detail">Определение 3 ключевых точек внедрения именно для твоего архетипа</div>
+            <div class="prog-detail">Диагностика текущего состояния по 6 сферам жизни: бизнес/карьера, деньги, отношения, здоровье, самореализация, духовность</div>
+            <div class="prog-detail">Получение персонального индекса сбалансированности жизни</div>
+            <div class="prog-detail">Постановка намерения на программу</div>
           </div>
-          <div class="prog-badge">⭐ Обязательный блок — точка отсчёта</div>
         </div>
       </div>
 
@@ -457,11 +415,8 @@ footer .brand span { color: var(--accent); }
           <p>Нельзя строить новое на фундаменте, который тебя разрушает. Сначала убираем то, что ворует энергию изнутри.</p>
           <div class="prog-details">
             <div class="prog-detail">Аудит привычек, которые создают «энергетический кассовый разрыв»</div>
-            <div class="prog-detail">Протокол замены — не через силу воли, а через перепрограммирование триггеров</div>
-            <div class="prog-detail">Работа с нутрициологом: питание и вещества, которые незаметно «сжигают» когнитивный ресурс</div>
-            <div class="prog-detail">AI-трекинг отклонений — ты видишь паттерн, а не просто «сорвался снова»</div>
+            <div class="prog-detail">Протокол замены не через силу воли, а через перепрограммирование триггеров</div>
           </div>
-          <div class="prog-badge">⭐ Обязательный блок</div>
         </div>
       </div>
 
@@ -472,12 +427,12 @@ footer .brand span { color: var(--accent); }
         </div>
         <div class="prog-body">
           <div class="prog-tag">Блок 3 · Расчистка</div>
-          <h3>Отрезать лишнее — дела и переживания, отжирающие энергию</h3>
-          <p>Не все задачи одинаково важны. Не все переживания заслуживают твоего биологического ресурса. Здесь ты делаешь аудит внешней нагрузки.</p>
+          <h3>Отрезаешь дела, людей и переживания, пожирающие энергию</h3>
+          <p>Не все задачи одинаково важны. Не все переживания заслуживают твоего биологического ресурса.</p>
           <div class="prog-details">
-            <div class="prog-detail">Аудит обязательств: что ты делаешь из страха, вины или инерции — а не из выбора</div>
-            <div class="prog-detail">Карта «энергетических паразитов» — люди, задачи, петли беспокойства</div>
-            <div class="prog-detail">Работа с тревожным фоном: техники прерывания руминации через транзактный анализ</div>
+            <div class="prog-detail">Аудит обязательств: что ты делаешь из страха, вины или инерции, а не из выбора</div>
+            <div class="prog-detail">Карта «энергетических паразитов»</div>
+            <div class="prog-detail">Техники остановки тревоги</div>
             <div class="prog-detail">Протокол делегирования: что, кому и как передать без потери качества</div>
           </div>
         </div>
@@ -491,14 +446,13 @@ footer .brand span { color: var(--accent); }
         <div class="prog-body">
           <div class="prog-tag">Блок 4 · Биология</div>
           <h3>Сон, правильный отдых, режим дня</h3>
-          <p>Когнитивная эффективность невозможна без биологической стабилизации. Это не бонус — это условие для всего остального.</p>
+          <p>Когнитивная эффективность невозможна без выстроенного режима дня.</p>
           <div class="prog-details">
-            <div class="prog-detail">Персональный sleep-протокол: архитектура сна под твой хронотип и ритм жизни</div>
+            <div class="prog-detail">Персональный протокол сна</div>
             <div class="prog-detail">HRV и маркеры восстановления: учишься читать сигналы тела, а не игнорировать их</div>
-            <div class="prog-detail">Кортизоловый менеджмент: как стресс-реакции управляют твоими решениями — и как вернуть контроль</div>
+            <div class="prog-detail">Баланс работы и отдыха</div>
             <div class="prog-detail">Структура дня, которая защищает пиковое состояние от операционки</div>
           </div>
-          <div class="prog-badge">⭐ Обязательный блок</div>
         </div>
       </div>
 
@@ -509,15 +463,13 @@ footer .brand span { color: var(--accent); }
         </div>
         <div class="prog-body">
           <div class="prog-tag">Блок 5 · Внедрение</div>
-          <h3>Полезные привычки — алгоритм внедрения</h3>
-          <p>Не «ставим цели» — внедряем одну привычку в месяц по проверенному алгоритму. Медленно, системно, навсегда.</p>
+          <h3>Алгоритм внедрения полезных привычек</h3>
+          <p>Не «ставим цели» — внедряем одну привычку в месяц по проверенному алгоритму. Последовательно, системно, навсегда.</p>
           <div class="prog-details">
-            <div class="prog-detail">Алгоритм встройки привычки: триггер → рутина → награда — с точным расчётом под твой ритм жизни</div>
-            <div class="prog-detail">Первый месяц: выбираем и внедряем привычку №1 — ту, что даст наибольший ROI энергии</div>
-            <div class="prog-detail">Второй месяц: привычка №2 встраивается поверх первой, не конкурируя с ней</div>
-            <div class="prog-detail">AI-консьерж отслеживает выполнение и фиксирует «срывы» до того, как они станут откатом</div>
+            <div class="prog-detail">Первый месяц: выбираем и внедряем привычку №1, которая даст наибольший прирост качества жизни</div>
+            <div class="prog-detail">Второй месяц: внедряем привычку, которая поможет быть эффективнее</div>
           </div>
-          <div class="prog-badge">⭐ Обязательный блок · 2 привычки за курс</div>
+          <div class="prog-badge">⭐ 2 привычки за курс</div>
         </div>
       </div>
 
@@ -528,15 +480,13 @@ footer .brand span { color: var(--accent); }
         </div>
         <div class="prog-body">
           <div class="prog-tag">Блок 6 · Убеждения</div>
-          <h3>Переписывание убеждений — штурм убеждений</h3>
-          <p>Поведение меняется только когда меняется картина мира. Мы работаем с корневыми убеждениями, которые саботируют всё остальное.</p>
+          <h3>Переписываем негативные убеждения</h3>
+          <p>Поведение меняется только когда меняется картина мира. Мы работаем с корневыми убеждениями, которые сильнее всего мешают жить.</p>
           <div class="prog-details">
-            <div class="prog-detail">Штурм убеждений: групповая работа по выявлению транзактных сценариев («Будь сильным», «Радуй других»)</div>
-            <div class="prog-detail">Карта ограничивающих убеждений — конкретно по твоему архетипу и ситуации</div>
-            <div class="prog-detail">Протокол переписывания: не аффирмации, а поведенческая замена через подтверждённые инциденты</div>
-            <div class="prog-detail">Работа с психологом: индивидуальные сессии по сценариям, которые «не хотят» меняться</div>
+            <div class="prog-detail">Штурм убеждений — рабочая методика по их изменению</div>
+            <div class="prog-detail">Карта ограничивающих убеждений</div>
+            <div class="prog-detail">Персональная работа с твоими убеждениями</div>
           </div>
-          <div class="prog-badge">⭐ Обязательный блок</div>
         </div>
       </div>
 
@@ -550,10 +500,9 @@ footer .brand span { color: var(--accent); }
           <h3>Финансовые убеждения и финансовые привычки</h3>
           <p>Деньги — это не только про бизнес. Финансовое поведение управляется теми же сценариями, что и остальная жизнь.</p>
           <div class="prog-details">
-            <div class="prog-detail">Аудит финансовых убеждений: «деньги — это тяжело», «богатые — нечестные», «я не заслуживаю»</div>
-            <div class="prog-detail">Личный финансовый протокол: базовые привычки управления деньгами, которые ты откладывал годами</div>
-            <div class="prog-detail">Работа с финансовым консультантом из пула специалистов: порядок в личных финансах, а не только в бизнесе</div>
-            <div class="prog-detail">Life EBITDA: как считать настоящую «прибыльность» твоей жизни, а не только бизнеса</div>
+            <div class="prog-detail">Аудит финансовых убеждений: «деньги — это тяжело», «богатые воруют», «я недостоин»</div>
+            <div class="prog-detail">Личный финансовый протокол — базовые привычки управления деньгами</div>
+            <div class="prog-detail">Разбор основных ошибок в управлении деньгами</div>
           </div>
         </div>
       </div>
@@ -566,12 +515,12 @@ footer .brand span { color: var(--accent); }
         <div class="prog-body">
           <div class="prog-tag">Блок 8 · Финал</div>
           <h3>Эффективность и поддержание системы</h3>
-          <p>Финальный блок — техники и лайфхаки повышения КПД плюс закрепление всего, что внедрили за 8 недель.</p>
+          <p>Финальный блок — техники для повышения эффективности и качества жизни.</p>
           <div class="prog-details">
             <div class="prog-detail">Топ-инструменты концентрации, быстрого восстановления и управления вниманием</div>
             <div class="prog-detail">Личная «инструкция по эксплуатации»: что делать при первых признаках срыва системы</div>
-            <div class="prog-detail">Протокол поддержания: минимально жизнеспособная система, которая работает даже в хаосе</div>
-            <div class="prog-detail">Graduation call: разбор результатов, трекинг изменений по Reassembly Score, план на следующие 90 дней</div>
+            <div class="prog-detail">Протокол поддержания — минимально жизнеспособная система, которая работает даже в хаосе</div>
+            <div class="prog-detail">Подведение итогов и план на следующие 90 дней</div>
           </div>
           <div class="prog-badge">🏁 Финальный блок · Закрепление системы</div>
         </div>
@@ -583,47 +532,42 @@ footer .brand span { color: var(--accent); }
 
 <div class="divider"></div>
 
-<!-- ── INCLUDES ── -->
+<!-- INCLUDES -->
 <section class="includes-section section">
   <div class="container">
     <div class="section-label">Что входит</div>
     <h2 style="font-size:clamp(28px,3.5vw,42px);color:#fff;">Полная комплектация программы</h2>
     <div class="includes-grid">
       <div class="inc-card">
-        <div class="inc-icon">🤖</div>
-        <h4>AI-Экзоскелет 24/7</h4>
-        <p>Персональный AI-консьерж знает твои цели, трекает ежедневные отчёты и держит тебя в курсе отклонений — между сессиями, в реальном времени.</p>
-      </div>
-      <div class="inc-card">
         <div class="inc-icon">👥</div>
         <h4>8 групповых сессий</h4>
-        <p>Еженедельные разборы с куратором-методологом. Транзактный анализ, системный коучинг, работа с реальными ситуациями участников.</p>
+        <p>Разбор основных тем, необходимых для сбалансированной и эффективной жизни.</p>
       </div>
       <div class="inc-card">
         <div class="inc-icon">🔬</div>
-        <h4>Пул специалистов</h4>
-        <p>Нутрициолог, психолог, тренер, финансовый консультант. Подключаются под конкретный «сбой» — не универсальный куратор, а профильный эксперт.</p>
+        <h4>Приглашённые специалисты</h4>
+        <p>Нутрициолог, фитнес-тренер, психолог, финансист — мастера своего дела.</p>
       </div>
       <div class="inc-card">
         <div class="inc-icon">📊</div>
-        <h4>Диагностика Reassembly Score</h4>
-        <p>Аудит по 6 сферам. Персональный индекс. Определение архетипа. Стартовая и финальная диагностика — видишь изменения в цифрах.</p>
+        <h4>Аудит жизни</h4>
+        <p>Аудит по 6 сферам и персональный индекс баланса.</p>
       </div>
       <div class="inc-card">
         <div class="inc-icon">🔒</div>
-        <h4>Accountability-группа равных</h4>
-        <p>5–10 предпринимателей с сопоставимым доходом и контекстом. Закрытый чат, еженедельный чекин, настоящие разговоры без масок.</p>
+        <h4>Группа сильных</h4>
+        <p>Лично отобранные предприниматели с сопоставимым доходом и контекстом. Закрытый чат, еженедельная поддержка равных.</p>
       </div>
       <div class="inc-card">
         <div class="inc-icon">📋</div>
-        <h4>Notion Life OS Dashboard</h4>
-        <p>Готовый шаблон системы, адаптированный под твой архетип. Не строишь с нуля — только заполняешь. Работает с AI-консьержем.</p>
+        <h4>Life OS Dashboard</h4>
+        <p>Разбор основных показателей.</p>
       </div>
     </div>
     <div class="diag-box">
       <div class="diag-left">
         <h3>Первый шаг — диагностический созвон</h3>
-        <p>60 минут. Бесплатно. Разберём твою ситуацию, определим архетип и точки входа. Если программа не подходит — скажем честно, без давления.</p>
+        <p>Разберу твою ситуацию и скажу, подходит ли программа лично тебе.</p>
       </div>
       <div class="diag-right">
         <a href="https://t.me/korolev_finance" target="_blank" class="btn-primary">Записаться →</a>
@@ -634,30 +578,17 @@ footer .brand span { color: var(--accent); }
 
 <div class="divider"></div>
 
-<!-- ── GUARANTEE ── -->
-<section class="guarantee-section section">
+<!-- SCARCITY -->
+<section class="section">
   <div class="container">
-    <div class="guarantee-box">
-      <div class="guarantee-icon">🛡️</div>
-      <div class="guarantee-content">
-        <div class="section-label" style="margin-bottom:12px;">Гарантия</div>
-        <h2>60 дней. Результат или полный возврат.</h2>
-        <p>Мы несём финансовую ответственность за методологию. Если ты выполняешь все протоколы программы и не видишь измеримого улучшения — возвращаем оплату без вопросов и объяснений.</p>
-        <div class="guarantee-points">
-          <div class="gp"><div class="gp-icon">✓</div><div class="gp-text">Не «по условиям» — а без вопросов. Написал — вернули.</div></div>
-          <div class="gp"><div class="gp-icon">✓</div><div class="gp-text">60 дней — это больше, чем длится сама программа. Времени достаточно.</div></div>
-          <div class="gp"><div class="gp-icon">✓</div><div class="gp-text">Это наша уверенность в методологии. Не маркетинговый трюк.</div></div>
-        </div>
-      </div>
-    </div>
     <div class="scarcity-bar">
       <div class="sc-icon">⚡</div>
       <div class="sc-text">
-        <h4>Текущий поток: места заканчиваются</h4>
-        <p>Accountability-группа работает только в камерном формате — не больше 10 человек. Это принципиально для качества. Следующий поток — через 3 месяца.</p>
+        <h4>Текущий поток — Мини-Группа</h4>
+        <p>Я специально набираю небольшую группу, чтобы уделить внимание каждому. В следующем потоке будет больше людей, меньше моего личного присутствия.</p>
       </div>
       <div class="sc-spots">
-        <div class="num">10</div>
+        <div class="num">15</div>
         <div class="label">мест в потоке</div>
       </div>
     </div>
@@ -666,107 +597,41 @@ footer .brand span { color: var(--accent); }
 
 <div class="divider"></div>
 
-<!-- ── OFFER CTA ── -->
+<!-- OFFER CTA -->
 <section class="offer-section section" id="cta">
   <div class="container">
     <div class="offer-box">
       <h2>Точка Сборки: Life OS за 8 недель</h2>
-      <p class="tagline">Для предпринимателей, которые знают что делать — но не делают</p>
+      <p class="tagline">Для предпринимателей, которые хотят в балансе достигать своих целей</p>
 
       <div class="offer-promise">
-        Ты выстроишь операционную систему своей жизни за 8 недель и начнёшь жить с +10 часами в неделю, стабильной энергией и фокусом —
-        <div class="even-if">даже если ты уже пробовал 5 других методов · даже если у тебя «сложный» бизнес · даже если ты живёшь на два города</div>
+        Ты выстроишь операционную систему своей жизни за 8 недель и получишь +10 свободных часов в неделю, стабильную энергию и фокус —
+        <div class="even-if">даже если ты уже пробовал 5 других методов · даже если у тебя «сложный» бизнес · даже если ты живёшь на две страны</div>
       </div>
 
       <div class="offer-includes">
-        <span class="oi-tag">AI-Экзоскелет 24/7</span>
         <span class="oi-tag">8 групповых сессий</span>
         <span class="oi-tag">Пул специалистов</span>
-        <span class="oi-tag">Reassembly Score</span>
-        <span class="oi-tag">Группа равных</span>
-        <span class="oi-tag">Notion Dashboard</span>
-        <span class="oi-tag">Гарантия 60 дней</span>
+        <span class="oi-tag">Персональная работа</span>
+        <span class="oi-tag">Аудит жизни</span>
+        <span class="oi-tag">Группа сильных</span>
+        <span class="oi-tag">Дашборд баланса</span>
       </div>
 
       <a href="https://t.me/korolev_finance" target="_blank" class="offer-cta">Записаться на диагностику →</a>
       <div class="offer-subtext">
-        Диагностический созвон бесплатный · 60 минут · Без давления и продаж «в лоб»<br>
-        Разберём твою ситуацию · Если программа не подходит — скажем честно
+        Диагностический созвон бесплатный · Без давления и продаж «в лоб»<br>
+        Разберу твою ситуацию · Если программа не подходит — скажу честно
       </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ── FAQ ── -->
-<section class="section">
-  <div class="container">
-    <div class="section-label">Частые вопросы</div>
-    <h2 style="font-size:clamp(26px,3vw,38px);color:#fff;margin-bottom:8px;">Отвечаем на главные сомнения</h2>
-    <div class="faq-grid">
-      <div class="faq-item">
-        <h4>Чем это отличается от коучинга или терапии?</h4>
-        <p>Коуч разговаривает. Терапевт работает с прошлым. Точка Сборки — инженерия настоящего: ежедневный трекинг, AI-консьерж, пул специалистов и внешняя accountability. Мы не вдохновляем — мы внедряем.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Я уже покупал курсы и не проходил до конца. Почему здесь будет иначе?</h4>
-        <p>Потому что мы строим внешнюю систему, а не полагаемся на твою внутреннюю мотивацию. AI-консьерж и группа равных держат тебя в потоке, когда собственный ресурс иссякает.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Сколько времени нужно в неделю?</h4>
-        <p>Групповая сессия — 90 минут в неделю. Ежедневный трекинг через AI — 5–7 минут. Практические задания — встроены в твой обычный день, а не добавляются сверху.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Я предприниматель с нестандартным графиком и живу на два города. Подойдёт?</h4>
-        <p>Да. Программа строится вокруг твоей реальной жизни, а не идеальных условий. AI-консьерж работает асинхронно, сессии записываются. Специально для релокантов и тех, кто постоянно в движении.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Это очередной «инфобизнес»?</h4>
-        <p>Нет. Мы намеренно избегаем языка мотивации, марафонов и «потоков». Работаем через транзактный анализ, нейробиологию и системный менеджмент. Гарантия результата — финансовое подтверждение уверенности в методе.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Что если программа не подойдёт?</h4>
-        <p>Полный возврат в течение 60 дней — без вопросов. Кроме того, на диагностическом созвоне мы честно скажем, если программа не про тебя. Не продаём всем подряд.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Когда стартует следующий поток?</h4>
-        <p>Текущий поток стартует в ближайшее время. Следующий — через 3 месяца. В группе не более 10 человек. Записывайтесь на диагностику, чтобы попасть в текущий поток.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Что происходит на диагностическом созвоне?</h4>
-        <p>60 минут с Евгением лично. Разбираем твою ситуацию, определяем архетип и Reassembly Score. Ты получишь конкретные точки входа — независимо от того, запишешься в программу или нет.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ── FINAL CTA ── -->
-<section class="section" style="padding:72px 0;">
-  <div class="container" style="text-align:center;">
-    <div class="section-label" style="text-align:center;">Следующий шаг</div>
-    <h2 style="font-size:clamp(28px,4vw,48px);color:#fff;margin-bottom:16px;max-width:640px;margin-left:auto;margin-right:auto;">
-      Начни с диагностики.<br>Бесплатно. Без давления.
-    </h2>
-    <p style="max-width:480px;margin:0 auto 40px;font-size:17px;">
-      60 минут. Разберём твою ситуацию. Получишь конкретные точки входа — независимо от того, запишешься в программу или нет.
-    </p>
-    <a href="https://t.me/korolev_finance" target="_blank" class="btn-primary" style="font-size:18px;padding:20px 48px;">
-      Записаться на диагностику →
-    </a>
-    <p style="margin-top:20px;font-size:14px;color:var(--dim);">
-      Точка Сборки: Метод Евгения Королёва · Гарантия результата · 10 мест в потоке
-    </p>
-  </div>
-</section>
-
-<!-- ── FOOTER ── -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="brand">Точка <span>Сборки</span></div>
-    <p>Метод Евгения Королёва · Life OS для предпринимателей</p>
+    <p>Life OS для предпринимателей</p>
     <p style="margin-top:8px;">© 2026 · Все права защищены</p>
   </div>
 </footer>
