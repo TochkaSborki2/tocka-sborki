@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Точка Сборки — Life OS за 8 недель</title>
+<title>Точка Сборки — Сбалансированная и эффективная жизнь за 8 недель</title>
 <style>
 :root {
   --bg: #080808;
@@ -141,6 +141,30 @@ p { color: var(--muted); font-size: 16px; }
 .c8 .prog-connector { background: none; }
 .c8 .prog-tag { background: rgba(128,203,196,0.1); color: #80cbc4; }
 
+/* TRAINER */
+.trainer-section { background: var(--bg2); }
+.trainer-card { display: flex; gap: 48px; align-items: flex-start; }
+.trainer-photo { width: 280px; height: 360px; border-radius: 20px; overflow: hidden; flex-shrink: 0; border: 2px solid var(--border2); }
+.trainer-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.trainer-info h3 { font-size: clamp(24px, 3vw, 36px); color: #fff; margin-bottom: 4px; }
+.trainer-role { font-size: 14px; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px; }
+.trainer-creds { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.trainer-cred { display: flex; gap: 12px; align-items: flex-start; }
+.trainer-cred-icon { color: var(--accent); font-size: 16px; flex-shrink: 0; margin-top: 3px; }
+.trainer-cred-text { font-size: 15px; color: #bbb; }
+
+/* CASES */
+.cases-grid { margin-top: 48px; }
+.case-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 20px; padding: 36px; display: flex; gap: 28px; align-items: flex-start; }
+.case-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 900; color: #000; flex-shrink: 0; }
+.case-content h4 { color: #fff; font-size: 18px; margin-bottom: 8px; }
+.case-before { font-size: 14px; color: var(--dim); margin-bottom: 16px; font-style: italic; }
+.case-after-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--green); font-weight: 700; margin-bottom: 10px; }
+.case-results { display: flex; flex-direction: column; gap: 8px; }
+.case-result { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; color: #bbb; }
+.case-result::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+
+/* INCLUDES */
 .includes-section { background: var(--bg2); }
 .includes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 48px; }
 .inc-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
@@ -186,6 +210,9 @@ footer .brand span { color: var(--accent); }
   .program-timeline::before { left: 22px; }
   .prog-node { width: 46px; }
   .prog-circle { width: 46px; height: 46px; font-size: 16px; }
+  .trainer-card { flex-direction: column; gap: 28px; }
+  .trainer-photo { width: 200px; height: 260px; }
+  .case-card { flex-direction: column; gap: 20px; }
   .scarcity-bar { flex-direction: column; text-align: center; }
   .sc-spots { margin-left: 0; }
   .diag-box { grid-template-columns: 1fr; }
@@ -214,7 +241,7 @@ footer .brand span { color: var(--accent); }
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="container">
-    <div class="hero-eyebrow">Life OS · Поток открыт</div>
+    <div class="hero-eyebrow">Точка Сборки · Поток открыт</div>
     <h1>Создай <em>сбалансированную</em> и эффективную жизнь за 8 недель</h1>
     <p class="hero-sub">
       <strong>Точка Сборки</strong> — это не курс по привычкам и не очередное наставничество.
@@ -234,7 +261,7 @@ footer .brand span { color: var(--accent); }
         <div class="label">до системного<br>результата</div>
       </div>
       <div class="proof-item">
-        <div class="num">15<span>мест</span></div>
+        <div class="num">10<span>мест</span></div>
         <div class="label">камерный формат<br>в потоке</div>
       </div>
     </div>
@@ -363,7 +390,7 @@ footer .brand span { color: var(--accent); }
         <div class="anti-row"><div class="anti-icon">–</div><p>Кураторы не в теме</p></div>
       </div>
       <div class="anti-col anti-good">
-        <h3 class="good-title">✅ Точка Сборки: Life OS</h3>
+        <h3 class="good-title">✅ Точка Сборки</h3>
         <div class="anti-row"><div class="anti-icon">+</div><p>Протоколы внедрения на 8 недель</p></div>
         <div class="anti-row"><div class="anti-icon">+</div><p>Регулярная диагностика и трекинг показателей</p></div>
         <div class="anti-row"><div class="anti-icon">+</div><p>Фокус на внедрение</p></div>
@@ -532,6 +559,68 @@ footer .brand span { color: var(--accent); }
 
 <div class="divider"></div>
 
+<!-- TRAINER -->
+<section class="trainer-section section">
+  <div class="container">
+    <div class="section-label">Ведущий тренер</div>
+    <div class="trainer-card">
+      <div class="trainer-photo">
+        <img src="photo.jpg" alt="Евгений Королёв">
+      </div>
+      <div class="trainer-info">
+        <h3>Евгений Королёв</h3>
+        <div class="trainer-role">Ведущий тренер</div>
+        <p style="font-size:16px;color:#bbb;margin-bottom:20px;">10 лет в инвестициях и финансовом консалтинге. Магистратура ВШЭ по психологии. Создал систему «Точка Сборки» на стыке психологии, нейробиологии и системного менеджмента.</p>
+        <div class="trainer-creds">
+          <div class="trainer-cred">
+            <div class="trainer-cred-icon">→</div>
+            <div class="trainer-cred-text">Магистр психологии, сертифицированный коуч ICU</div>
+          </div>
+          <div class="trainer-cred">
+            <div class="trainer-cred-icon">→</div>
+            <div class="trainer-cred-text">Финансовый консультант с 10-летним опытом</div>
+          </div>
+          <div class="trainer-cred">
+            <div class="trainer-cred-icon">→</div>
+            <div class="trainer-cred-text">Ex-партнёр Дубайского венчурного фонда</div>
+          </div>
+          <div class="trainer-cred">
+            <div class="trainer-cred-icon">→</div>
+            <div class="trainer-cred-text">Спикер на 25 международных конференциях</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CASES -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Кейсы</div>
+    <h2 style="font-size:clamp(28px,3.5vw,42px);color:#fff;margin-bottom:8px;">Результаты участников</h2>
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-avatar">О</div>
+        <div class="case-content">
+          <h4>Оксана</h4>
+          <div class="case-before">Выгорела после тяжёлой работы в найме</div>
+          <div class="case-after-label">После работы в программе:</div>
+          <div class="case-results">
+            <div class="case-result">Восстановила уровень энергии</div>
+            <div class="case-result">Нашла удалённую работу с комфортными условиями и желаемой зарплатой</div>
+            <div class="case-result">Впервые стала заниматься бизнесом</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- INCLUDES -->
 <section class="includes-section section">
   <div class="container">
@@ -588,7 +677,7 @@ footer .brand span { color: var(--accent); }
         <p>Я специально набираю небольшую группу, чтобы уделить внимание каждому. В следующем потоке будет больше людей, меньше моего личного присутствия.</p>
       </div>
       <div class="sc-spots">
-        <div class="num">15</div>
+        <div class="num">10</div>
         <div class="label">мест в потоке</div>
       </div>
     </div>
@@ -601,7 +690,7 @@ footer .brand span { color: var(--accent); }
 <section class="offer-section section" id="cta">
   <div class="container">
     <div class="offer-box">
-      <h2>Точка Сборки: Life OS за 8 недель</h2>
+      <h2>Точка Сборки за 8 недель</h2>
       <p class="tagline">Для предпринимателей, которые хотят в балансе достигать своих целей</p>
 
       <div class="offer-promise">
@@ -631,7 +720,7 @@ footer .brand span { color: var(--accent); }
 <footer>
   <div class="container">
     <div class="brand">Точка <span>Сборки</span></div>
-    <p>Life OS для предпринимателей</p>
+    <p>Для предпринимателей</p>
     <p style="margin-top:8px;">© 2026 · Все права защищены</p>
   </div>
 </footer>
